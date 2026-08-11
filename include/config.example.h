@@ -1,0 +1,48 @@
+#pragma once
+
+// Copy this file to config.h and edit the values for your network/printer.
+
+#define DEVICE_NAME "DODO PRINT"
+
+#define WIFI_SSID "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
+
+#define PRINTER_IP "192.168.1.100"
+#define PRINTER_SERIAL "YOUR_PRINTER_SERIAL"
+#define PRINTER_ACCESS_CODE "YOUR_LAN_ACCESS_CODE"
+
+#define MQTT_PORT 8883
+#define MQTT_USERNAME "bblp"
+#define MQTT_USE_TLS 1
+#define MQTT_TLS_INSECURE 1
+
+#define DEMO_MODE 1
+#define USE_REAL_DISPLAY 1
+
+#define DISPLAY_CONTROLLER "ST7789"
+#define DISPLAY_NATIVE_WIDTH 170
+#define DISPLAY_NATIVE_HEIGHT 320
+#define DISPLAY_WIDTH 320
+#define DISPLAY_HEIGHT 170
+
+// LANDSCAPE ORIENTATION - USB CONNECTOR ON LEFT
+// Test 0..3 after the exact module/pinout is known.
+#define DISPLAY_ROTATION 1
+
+#define DISPLAY_INVERT_COLORS 1
+
+// ideaspark ESP32 1.9 inch LCD(Solder PIN), ASIN B0D6QXC813.
+#define TFT_MOSI_PIN 23
+#define TFT_SCLK_PIN 18
+#define TFT_CS_PIN 15
+#define TFT_DC_PIN 2
+#define TFT_RST_PIN 4
+#define TFT_BL_PIN 32
+
+#define PRINTER_TIMEOUT_MS 15000UL
+#define WIFI_RETRY_MS 5000UL
+#define MQTT_RETRY_MS 5000UL
+#define UI_REFRESH_MS 500UL
+#define FINISHED_SCREEN_DURATION_MS 120000UL
+
+#define LOG_LEVEL 1
